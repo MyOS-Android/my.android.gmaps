@@ -9,7 +9,10 @@ a personal fork of [GMaps WV](https://github.com/Divested-Mobile/maps) for [MyOS
 ## Needed Permissions
   - INTERNET
   - ACCESS FINE LOCATION
+
 ## Screenshots
 
 ## Changes
   - [X] Based on GMaps WV v1.1 b10
+  - [X] Change UserAgent
+  - [X] Clear app Data on exit

@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "my.android.gmaps"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "0.1"
+        resConfigs "en"
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            minifyEnabled true
+            zipAlignEnabled true
+            useProguard false
+        }
+        release {
+            shrinkResources true
+            minifyEnabled true
+            zipAlignEnabled true
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+}
